@@ -45,25 +45,25 @@ You could be battling six alien ships each with unique values.
 const mainPlayer1El = document.getElementById('characther')
 const gameEl = document.getElementById('enemy')
 const scoreEl = document.querySelector('score')
+const computer = document.querySelector('computer')
 
 const game = 
 
 {
     players: [],
-    playerOneReady: false,
     start: function () {
-        // startButton.classList.toggle("hide")
         startContainer.classList.toggle("hide")
         gameContainer.classList.toggle("hide")
     },
 }
 //Creating the main player: the spaceship
- class Player {
-    constructor(hp, firePower, accuracy) {
-        this.hp = hp;
-        this.firePower = firePower;
-        this.accuracy = accuracy;
+class EarthStar {
+    construtor(hp, firepower, accuracy){
+        this.hp = 20;
+        this.firepower = 5;
+        this.accuracy = .7;
     }
+     
     attack(){
         console.log('Die! You vile creature!');
     }
@@ -75,43 +75,45 @@ const game =
         console.log('Planet Earth is saved! Hip-hip-HOORAY!');
     }
 }
+console.log(EarthStar)
 
-function getRndInteger(min, max){
-    return Math.floor(Math.random) 
+
+
+class Enemy {
+    constructor(hpEne, fiepowerEne, accuracyEne){
+        this.hpEne = Math.round((Math.random() * (6 - 3)) + 3),
+        this.firepowerEne = Math.round((Math.random() * (4 - 2)) + 2),
+        this.accuracyEne = (Math.random() * (.8 - .6)) + .6 
+    }
+
+    attackShip(EarthStar) {
+        let ranInteger = Math.random();
+        console.log(`Enemy accuracy is ${ranNum}`);
+
+        if (ranInteger < this.accuracy) {
+            console.log(`${mainPlayer} has been hit!`);
+            EarthStar.hp = target.hp - this.firepowerEne;
+            console.log(`${EarthStar} hp level is now ${target.hp}`);
+            if (target.hp <= 0) {
+                console.log(`DEATH TO HUMANS!`);
+        }
+        const alien = new Enemy();
+    }
 }
-let hpEne = getRndInteger(3, 6);
-let firepowerEne = getRndInteger(2, 4)
-let accuracyEne = math.floor(Math.random)
-
-//Enemy: which is the aliens
-class Enemy{
-    constructor(hpEne, firePowerEne, accuracyEne) {
-        this.hpEne = hpEne.getRndInteger(3, 6);
-        this.firePowerEne = firePowerEne.getRndInteger(2, 4);
-        this.accuracyEne = accuracyEne.Math.floor(Math.random);
-    } 
-    attackShip(){
-        console.log('We will destroy you!');
-    }
-    winBattle(){
-        console.log('HAHA! We are the superior being!');
-    }
-    loseBattle(){
-        console.log('We have failed!');
-    }
-}
-let earthStar = new Player(20, 5, .7);
-console.log(earthStar.attack);
-
-
 
 //creating group of aliens(6)
-const alien1 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2, 4), accuracyEne.Math.floor(Math.random))
-const alien2 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2, 4), accuracyEne.Math.floor(Math.random))
-const alien3 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2, 4), accuracyEne.Math.floor(Math.random))
-const alien4 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2, 4), accuracyEne.Math.floor(Math.random))
-const alien5 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2, 4), accuracyEne.Math.floor(Math.random))
-const alien6 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2, 4), accuracyEne.Math.floor(Math.random))
+
+
+alienCount = 6;
+
+
+
+// const alien1 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2, 4), accuracyEne.Math.floor(Math.random))
+// const alien2 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2, 4), accuracyEne.Math.floor(Math.random))
+// const alien3 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2, 4), accuracyEne.Math.floor(Math.random))
+// const alien4 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2, 4), accuracyEne.Math.floor(Math.random))
+// const alien5 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2, 4), accuracyEne.Math.floor(Math.random))
+// const alien6 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2, 4), accuracyEne.Math.floor(Math.random))
 
 
 
@@ -120,6 +122,23 @@ const alien6 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2,
 // const battle = 
 
 
+
+// function getRndInteger(min, max){
+//     return Math.floor(Math.random) 
+// }
+// let hpEne = getRndInteger(3, 6);
+// let firepowerEne = getRndInteger(2, 4)
+// let accuracyEne = math.floor(Math.random)
+
+//Enemy: which is the aliens
+// class Enemy{
+//     constructor(hpEne, firePowerEne, accuracyEne) {
+//         hull: Math.round((Math.random() * (6 - 3)) + 3),
+//         firepower: Math.round((Math.random() * (4 - 2)) + 2),
+//         accuracy: (Math.random() * (.8 - .6)) + .6
+//     } 
+//     
+// }
 
 // const alien1 = new Enemy
 // newEnemy(alien1){
@@ -137,4 +156,3 @@ const alien6 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2,
 
 // console.log(leagueOfAliens.numberOf + 'Enemy')
 // console.log(leagueOfAliens.allEnemy)
-
