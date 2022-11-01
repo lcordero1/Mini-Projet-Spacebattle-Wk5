@@ -14,16 +14,20 @@ h1 {
     display: flex;
     justify-content: center; 
 }
-.world{
+/* .world{
     overflow: hidden;
     position: relative;
-}
+} */
 .score{
     position: absolute;
     font-size: 3vmin;
     right: 1vmin;
     top: 1vmin;
 }
-.hide{
+.hide {
     display: none;
+}
+.instructions {
+    border: 2px solid black
+
 }

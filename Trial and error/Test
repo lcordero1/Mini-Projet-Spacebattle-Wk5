@@ -1,0 +1,49 @@
+
+// function getRndInteger(min, max){
+//     return Math.floor(Math.random) 
+// }
+// let hpEne = getRndInteger(3, 6);
+// let firepowerEne = getRndInteger(2, 4)
+// let accuracyEne = math.floor(Math.random)
+
+//Enemy: which is the aliens
+// class Enemy{
+//     constructor(hpEne, firePowerEne, accuracyEne) {
+//         hull: Math.round((Math.random() * (6 - 3)) + 3),
+//         firepower: Math.round((Math.random() * (4 - 2)) + 2),
+//         accuracy: (Math.random() * (.8 - .6)) + .6
+//     } 
+//     
+// }
+
+// const alien1 = new Enemy
+// newEnemy(alien1){
+//   allEnemy(){
+//     return this.newEnemy
+//   }
+//   numberOfEnemy(){
+//       return this.newEnemy.length
+//   }
+// }
+
+// const leagueOfAliens = new Enemy()
+// league.newEnemy()
+// league.newEnemy()
+
+// console.log(leagueOfAliens.numberOf + 'Enemy')
+// console.log(leagueOfAliens.allEnemy)
+
+
+// const alien1 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2, 4), accuracyEne.Math.floor(Math.random))
+// const alien2 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2, 4), accuracyEne.Math.floor(Math.random))
+// const alien3 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2, 4), accuracyEne.Math.floor(Math.random))
+// const alien4 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2, 4), accuracyEne.Math.floor(Math.random))
+// const alien5 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2, 4), accuracyEne.Math.floor(Math.random))
+// const alien6 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2, 4), accuracyEne.Math.floor(Math.random))
+
+// const alien1 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2, 4), accuracyEne.Math.floor(Math.random))
+// const alien2 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2, 4), accuracyEne.Math.floor(Math.random))
+// const alien3 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2, 4), accuracyEne.Math.floor(Math.random))
+// const alien4 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2, 4), accuracyEne.Math.floor(Math.random))
+// const alien5 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2, 4), accuracyEne.Math.floor(Math.random))
+// const alien6 = new Enemy(hpEne.getRndInteger(3, 6),firePowerEne.getRndInteger(2, 4), accuracyEne.Math.floor(Math.random))

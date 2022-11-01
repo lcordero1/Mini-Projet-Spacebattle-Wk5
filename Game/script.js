@@ -57,7 +57,7 @@ const game = {
         gameContainer.classList.toggle("hide")
     },
     //battle
-    battle = (EarthStar) => {
+    battle: () => {
 
         outcome()
 
@@ -94,7 +94,7 @@ const game = {
 
         class Enemy {
             constructor(hpEne, fiepowerEne, accuracyEne) {
-                this.hpEne = Math.round((Math.random() * (6 - 3)) + 3),
+                    this.hpEne = Math.round((Math.random() * (6 - 3)) + 3),
                     this.firepowerEne = Math.round((Math.random() * (4 - 2)) + 2),
                     this.accuracyEne = (Math.random() * (.8 - .6)) + .6
             }
@@ -105,9 +105,9 @@ const game = {
 
                 if (ranInteger < this.accuracy) {
                     console.log(`${mainPlayer} has been hit!`);
-                    EarthStar.hp = target.hp - this.firepowerEne;
-                    console.log(`${EarthStar} hp level is now ${target.hp}`);
-                    if (target.hp <= 0) {
+                    EarthStar.hp = EarthStar.hp - this.firepowerEne;
+                    console.log(`${EarthStar} hp level is now ${EarthStar.hp}`);
+                    if (EarthStar.hp <= 0) {
                         console.log(`DEATH TO HUMANS!`);
                     }
                     const alien = new Enemy();
@@ -115,6 +115,9 @@ const game = {
                     alienCount = 6;
                 }
             }
+        }
+    }
+}
 
           
 
