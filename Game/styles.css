@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+    background-color: rgb(4, 4, 54);
+}
+h1 {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center; 
+}
+.world{
+    overflow: hidden;
+    position: relative;
+}
+.score{
+    position: absolute;
+    font-size: 3vmin;
+    right: 1vmin;
+    top: 1vmin;
+}
+.hide{
+    display: none;
+}

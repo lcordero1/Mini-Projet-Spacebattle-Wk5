@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaceship Battle Game</title>
+    <script src="./finalscript.js" defer></script>
+    <link rel="stylesheet" href="./styles.css"> 
+</head>
+<body>
+    <div id="game">
+        <div id="characther"></div>
+        <div id="enemy"></div>
+    <!-- <div class="world" id="world-data"> -->
+        <div class="score" data-score>0</div>
+        <div>
+    <h1>ULTIMATE SPACE BATTLE</h1>
+        </div>
+    <div class="score" data-score>0</div>
+    <div>
+        <div id="start-container">
+            <div id="instructions">
+                <h3>Only YOU can save your planet from an alien invasion. </h3>
+                <h4>Instructions: There are six alien ships. The aliens' weakness is that they are too logical and attack one at a time: they will wait to see the outcome of a battle before deploying another alien ship. Your strength is that you have the initiative and get to attack first. However, you do not have targeting lasers and can only attack the aliens in order. After you have destroyed a ship, you have the option to make a hasty retreat.
+
+                </h4>
+            </div>
+    
+            <button id="start-button" onclick="game.start()">START</button>
+            </div>
+            <div class="hide" id="game-container">
+             </div>
+    </div>
+</body>
+</html>
